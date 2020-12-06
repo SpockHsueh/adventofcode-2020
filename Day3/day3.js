@@ -7,7 +7,7 @@ function myFunction(data) {
   for (let i = 1; i < data.length; i++) {
     const item = data[i]
     const rowLength = data[i].length
-    const targetNum = count % rowLength === 0 ? rowLength - 1 : count % rowLength
+    let targetNum = count % rowLength
     const targetLocation = item[targetNum]
     if (targetLocation == "#") {
       res += 1
@@ -15,6 +15,9 @@ function myFunction(data) {
     count += 3
   }
   return res
+
 }
 
+
 console.log(myFunction(data))
+console.log(62 % 31);
