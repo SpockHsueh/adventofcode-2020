@@ -34,9 +34,7 @@ function myFunction(data) {
     }
     seatId = row * 8 + column
     seatIds.push(seatId)
-
     res = seatId > res ? seatId : res
-    seatIds.push(res)
   }
   seatIds.sort(function(a,b) {
     return a-b
