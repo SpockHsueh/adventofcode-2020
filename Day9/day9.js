@@ -54,3 +54,4 @@ for (let l = 2; l < lines.length; l++) {
 }
 
 console.log(res2);
+console.log(Math.floor(10000 + Math.random() * 90000));
